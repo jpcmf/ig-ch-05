@@ -9,6 +9,7 @@ import { ptBR } from 'date-fns/locale';
 import { FiCalendar, FiClock, FiUser } from 'react-icons/fi';
 
 import { format } from 'date-fns';
+import Link from 'next/link';
 import Header from '../../components/Header';
 
 import { getPrismicClient } from '../../services/prismic';
@@ -105,6 +106,14 @@ export default function Post({ post, preview }: PostProps): JSX.Element {
             </article>
           ))}
         </div>
+
+        {preview && (
+          <aside>
+            <Link href="/api/exit-preview">
+              <a className={commonStyles.buttonPreview}>Sair do modo preview</a>
+            </Link>
+          </aside>
+        )}
       </main>
     </>
   );
