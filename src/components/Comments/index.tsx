@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import { Component, ReactElement } from 'react';
+// import { Component, ReactElement } from 'react';
 
 // export default class Comments extends Component<ReactElement> {
 //   componentDidMount() {
